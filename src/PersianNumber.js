@@ -42,6 +42,7 @@ class PersianNumber extends Component {
       result = formatString(result);
     }
     if (toman) {
+      result = Number(string).toLocaleString('fa-IR');
       result = result + ' تومان'
     }
 
@@ -111,7 +112,7 @@ export function formatNumber(number, dec = false) {
   return x1 + (dec ? x2 : '');
 }
 export function formatString(string, dec = false) {
-  const numberString = isNumber(parseInt(string)) && string !== '' ? string : 0;
+  const numberString = !isNAN(parseInt(string)) && string !== '' ? string : 0;
   return formatNumber(parseInt(numberString), dec) + '';
 }
 
