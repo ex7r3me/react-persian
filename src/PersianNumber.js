@@ -10,6 +10,8 @@ class PersianNumber extends Component {
     ]),
     format: PropTypes.bool,
     removeCommas: PropTypes.bool,
+    toman: PropTypes.bool,
+
   };
 
   static defaultProps = {
@@ -17,11 +19,12 @@ class PersianNumber extends Component {
     arabic: false,
     format: false,
     removeCommas: false,
+    toman : false
   };
 
   convert(string) {
     let result;
-    const { arabic, latin, format, removeCommas } = this.props;
+    const { arabic, latin, format, removeCommas ,toman} = this.props;
 
     if (latin) {
       result = latinToPersian(string);
@@ -37,6 +40,9 @@ class PersianNumber extends Component {
     
     if (format) {
       result = formatString(result);
+    }
+    if (toman) {
+      result = result + ' تومان'
     }
 
     return result;
