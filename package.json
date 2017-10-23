@@ -1,6 +1,6 @@
 {
-  "name": "react-persian",
-  "version": "1.1.0",
+  "name": "react-persian-currency",
+  "version": "1.2.0",
   "description": "A set of react components for Persian localisation",
   "main": "lib/index.js",
   "devDependencies": {
@@ -24,13 +24,14 @@
     "react-component",
     "persian"
   ],
-  "author": "Mohamad Mohebifar <mohamad@mohebifar.com>",
+  "author": "Siavash Ahmadpour <siavash.ahmadpour@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mohebifar/react-persian/issues"
+    "url": "https://github.com/ex7r3me/react-persian/issues"
   },
-  "homepage": "https://github.com/mohebifar/react-persian#readme",
+  "homepage": "https://github.com/ex7r3me/react-persian#readme",
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": ">=0.13.0"
   }
 }

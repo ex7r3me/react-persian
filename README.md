@@ -1,6 +1,7 @@
-# react-persian
-**react-persian** is a set of react components for Persian localization.
+# react-persian-currency
 
+**react-persian** is a set of react components for Persian localization.
+This is a clone with some changes from https://github.com/evandhq/react-persian
 # Installation
 
 You can install this package via `npm`:
